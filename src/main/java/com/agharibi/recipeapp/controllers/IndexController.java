@@ -8,6 +8,7 @@ public class IndexController {
 
     @RequestMapping({"/", "", "/index"})
     public String getIndexPage() {
+        System.err.println("re-run of spring dev tool");
         return "index";
     }
 }
