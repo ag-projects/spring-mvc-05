@@ -6,6 +6,11 @@ import java.util.Set;
 @Entity
 public class Recipe {
 
+    /**
+     * Recipe is the primary object
+     * which has other entities as it properties
+     */
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
