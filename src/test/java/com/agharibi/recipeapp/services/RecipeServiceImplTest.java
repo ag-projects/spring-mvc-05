@@ -1,5 +1,7 @@
 package com.agharibi.recipeapp.services;
 
+import com.agharibi.recipeapp.converters.RecipeCommandToRecipe;
+import com.agharibi.recipeapp.converters.RecipeToRecipeCommand;
 import com.agharibi.recipeapp.domain.Recipe;
 import com.agharibi.recipeapp.repositories.RecipeRepository;
 import org.junit.Before;
@@ -20,6 +22,10 @@ public class RecipeServiceImplTest {
 
     @Mock
     private RecipeRepository recipeRepository;
+    @Mock
+    RecipeToRecipeCommand recipeToRecipeCommand;
+    @Mock
+    RecipeCommandToRecipe recipeCommandToRecipe;
 
     @Before
     public void setUp() throws Exception {
