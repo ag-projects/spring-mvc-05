@@ -25,6 +25,7 @@ public class IngredientController {
         log.debug("List of ingredients by given recipeId: " + recipeId);
 
         model.addAttribute("recipe", recipeService.findCommandById(Long.valueOf(recipeId)));
+        log.debug(model.toString());
         return "recipe/ingredient/list";
     }
 }
