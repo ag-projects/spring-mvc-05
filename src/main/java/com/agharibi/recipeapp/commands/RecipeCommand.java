@@ -16,6 +16,7 @@ public class RecipeCommand {
     private String url;
     private String direction;
     private Set<IngredientCommand> ingredients = new HashSet<>();
+    private Byte[] image;
     private Difficulty difficulty;
     private NotesCommand notes;
     private Set<CategoryCommand> categories = new HashSet<>();
@@ -117,5 +118,13 @@ public class RecipeCommand {
 
     public void setCategories(Set<CategoryCommand> categories) {
         this.categories = categories;
+    }
+
+    public Byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(Byte[] image) {
+        this.image = image;
     }
 }
